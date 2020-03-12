@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoDownloader", "VideoDownloader\VideoDownloader.csproj", "{F402ED9A-4D4A-47B4-B512-912483EE94F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F402ED9A-4D4A-47B4-B512-912483EE94F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F402ED9A-4D4A-47B4-B512-912483EE94F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F402ED9A-4D4A-47B4-B512-912483EE94F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F402ED9A-4D4A-47B4-B512-912483EE94F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

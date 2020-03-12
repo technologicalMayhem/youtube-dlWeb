@@ -1,0 +1,28 @@
+﻿@using VideoDownloader.Services
+@model DownloadsModel
+
+@{
+    ViewData["Title"] = "Downloadfortschritt";
+}
+
+<div class="text-center">
+    @{
+        foreach (var info in Model.DownloadInfos)
+        {
+            <div class="card">
+                <div class="card-body">
+                    <div class="infoblock">
+                        <h5>@info.Title</h5>
+                        <h5>@info.DownloadStage.ToString()</h5>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar @(info.DownloadStage != DownloadStage.Done ? "progress-bar-striped progress-bar-animated" : "") " role="progressbar" style="width: @info.Progress%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">@info.Progress%</div>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
+<script>
+setTimeout(function(){window.location.reload()}, 1000);
+</script>

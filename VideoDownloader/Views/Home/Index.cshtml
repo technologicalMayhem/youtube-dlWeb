@@ -1,0 +1,18 @@
+﻿@model VideoDownloadModel
+@{
+    ViewData["Title"] = "Video Downloader";
+}
+
+<div class="text-center">
+    @if (!string.IsNullOrEmpty(ViewBag.Message))
+    {
+        <div class="alert alert-success">@ViewBag.Message</div>
+    }
+    <form asp-action="Index" asp-controller="Home">
+        <div class="form-group">
+            <label asp-for="VideoUrl"></label>
+            <input class="form-control" asp-for="VideoUrl"/>
+        </div>
+        <button class="btn btn-primary" type="submit">Downloaden</button>
+    </form>
+</div>

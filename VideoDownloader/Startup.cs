@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using VideoDownloader.Services;
+using VideoDownloader.Services.Video;
 
 namespace VideoDownloader
 {
@@ -25,7 +26,7 @@ namespace VideoDownloader
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddSingleton<IVideoDownloader,Services.VideoDownloader>();
+            services.AddSingleton<IDownloader,Services.Video.Downloader>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,7 +54,8 @@ namespace VideoDownloader
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{action=Index}/{id?}",
+                    new { controller = "Home", action = "Index" });
             });
         }
     }

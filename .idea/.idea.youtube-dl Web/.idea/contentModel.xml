@@ -14,9 +14,11 @@
         <e p="Controllers" t="Include">
           <e p="HomeController.cs" t="Include" />
         </e>
+        <e p="JobList.json" t="Include" />
         <e p="Models" t="Include">
           <e p="DownloadsModel.cs" t="Include" />
           <e p="ErrorViewModel.cs" t="Include" />
+          <e p="VerificationResultModel.cs" t="Include" />
           <e p="VideoDownloadModel.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -32,9 +34,17 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Services" t="Include">
-          <e p="VideoDownloader.cs" t="Include" />
+          <e p="Video" t="Include">
+            <e p="Downloader.cs" t="Include" />
+            <e p="DownloadJob.cs" t="Include" />
+            <e p="IDownloader.cs" t="Include" />
+          </e>
         </e>
         <e p="Startup.cs" t="Include" />
+        <e p="Utility" t="Include">
+          <e p="EnumExtensions.cs" t="Include" />
+          <e p="Person.cs" t="Include" />
+        </e>
         <e p="VideoDownloader.csproj" t="IncludeRecursive" />
         <e p="Views" t="Include">
           <e p="_ViewImports.cshtml" t="Include" />

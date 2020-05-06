@@ -1,3 +1,0 @@
-﻿<component name="DependencyValidationManager">
-  <scope name="Project" pattern="!file[riderModule]:VideoDownloader/wwwroot/lib/*" />
-</component>
